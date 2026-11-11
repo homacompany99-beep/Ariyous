@@ -1,0 +1,72 @@
+
+
+@layer base {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+}
+
+/* fonts */
+@layer base {
+/* Vazir - Regular */
+@font-face {
+  font-family: "Vazir";
+  src: url("./fonts/Vazir.woff2")
+    format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+/* Vazir - Bold */
+@font-face {
+  font-family: "Vazir";
+  src: url("./fonts/Vazir-Bold.woff2")
+    format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+}
+* {
+  line-height: 120%;
+  font-family: "Vazir"
+}
+.flexRow
+{
+  @apply flex items-center;
+}
+.contact img{
+
+  @apply w-[18px] h-[18px]
+}
+.menu a {
+  @apply text-[24px]
+}
+.menu a:hover , .contactsIcon:hover {
+  @apply opacity-70
+}
+.actions a{
+  @apply text-[#f3efe8a1]
+  
+}
+.section {
+  width: 100%;
+
+  &.primary {
+    background-color: #f4f0e8;
+  }
+
+  &.secondary {
+    background-color: #083027;
+  }
+}
+.services h2::after{
+content: url('./assets/arios_services_icon-edited.png');
+background-color: transparent;
+margin-right: 15px;
+}
+.services h2::before{
+content: url('./assets/arios_services_icon.png');
+background-color: transparent;
+margin-left: 15px;
+}
